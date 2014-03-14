@@ -11,7 +11,7 @@ filetype plugin indent on
 " Set the vim color theme to Soloarized
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme torte
 
 " Turn off line wrapping
 set nowrap
@@ -92,10 +92,6 @@ set viminfo='20,\"50,:20,%,n~/.viminfo
 
 " Go back to the position the cursor was on the last time this file was edited
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")|execute("normal `\"")|endif
-
-" Fix my <Backspace> key (in Mac OS X Terminal)
-set t_kb=
-fixdel
 
 " Highlight trailing whitespace
 highlight WhitespaceEOL ctermbg=red guibg=red
