@@ -118,8 +118,8 @@ autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
 
   " Various shortcuts for working with tabs
     map ,t :tabnew
-    map ,d :tabprev<CR>
-    map ,f :tabnext<CR>
+    map pt :tabprev<CR>
+    map gt :tabnext<CR>
 
   " Shortcuts for working with buffers
     map ,bn :bnext<CR>
@@ -163,6 +163,12 @@ autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
     map fc <Esc>:call CleanClose(1)
     map fq <Esc>:call CleanClose(0)
 
+  " CtrlP shortcuts
+    map <C-J> <C-W>j<C-W>_
+    map <C-K> <C-W>k<C-W>_
+    nmap <c-h> <c-w>h<c-w>
+    nmap <c-l> <c-w>l<c-w>
+    map cp :CtrlP<enter>
 
 "------------------------------------------------------------------------------
 " CUSTOM FUNCTIONS
